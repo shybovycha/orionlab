@@ -1,0 +1,30 @@
+#projects img {
+    /* max-width: 400px; */
+    max-height: 350px;
+}
+
+#contact-map {
+    min-width: 300px;
+    height: 400px;
+    display: block;
+}
+
+#contacts {
+    min-height: 620px;
+}
+
+p.contact-map-marker-popup-html {
+    color: #000 !important;
+}
+
+#contact-map-marker-popup-html {
+    display: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.header-help {
+    font-size: 0.85em;
+}
