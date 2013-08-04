@@ -1,98 +1,258 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Orion Laboratory</title>
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+        <link rel="stylesheet" href="css/tuktuk.css">
+        <link rel="stylesheet" href="css/tuktuk.icons.css">
+        <link rel="stylesheet" href="css/tuktuk.theme.css">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+        <link rel="stylesheet" href="css/custom.css">
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Orionlab by shybovycha</title>
-  </head>
+        <script src="js/jquery-2.0.3.min.js"></script>
+        <script src="js/tuktuk.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/fancybox/jquery.fancybox.js"></script>
+        <script src="js/custom.js"></script>
+    </head>
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/shybovycha/orionlab">View on GitHub</a>
-    <div class="shell">
+    <body>
+        <section class="padding bck theme" id="home">
+            <div class="row text book">
+                <div class="column_8">
+                    <img src="images/logo.png" alt="logo goes here" />
+                </div>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Orionlab</h1>
-            <h2></h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+                <div class="column_4">
+                    <h5>НИЛ <span class="tip-bottom cursor-pointer header-help" data-tip="Научно-Исследовательская Лаборатория"><span class="icon question-sign"></span></span></h5>
+                    <h1>Орион</h1>
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/shybovycha/orionlab/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/shybovycha/orionlab/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
+                    <br />
 
+                    <p class="text normal">
+                        Мы занимается созданием спец. оборудования для различных сфер применения,
+                        от создания проекта до его воплощения в "металле".
+                        Основное направление - геопозиционирование и измерения.
+                        С помощью нашего оборудования пользователь в полной мере получает
+                        необходимые ему данные от измерительных приборов и датчиков с привязкой
+                        к географическим и / или относительным координатам.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-      <span class="banner-fix"></span>
+        <section class="bck light">
+            <div class="row text center">
+                <nav data-tuktuk="menu" class="column_12 padding text bold">
+                    <a href="#projects">Проекты</a>
+                    <a href="#contacts">Контакты</a>
+                    <a href="#gallery">Галерея</a>
+                </nav>
+            </div>
+        </section>
 
+        <section class="padding bck lightblue" id="projects">
+            <div class="row text center">
+                <h2>Проекты</h2>
+            </div>
 
-      <section id="main_content">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+            <hr />
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+            <div class="row">
+                <div class="column_6">
+                    <img src="images/car_01.jpg" alt="car_02" class="responsive" />
+                </div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+                <div class="column_6">
+                    Наверняка многие видели на дорогах столицы и всей страны шустрые ярко-желтые
+                    автомобили со странной формы балкой на крыше. Это световая балка дорожных
+                    служб (желтые проблесковые огни) с установленными на ней видеокамерами "Axis"
+                    со 180-ти градусным суммарным обзором.
+                </div>
+            </div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+            <div class="row padding">
+                &zwnj;
+            </div>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+            <div class="row">
+                <div class="column_6">
+                    Это творение НИЛ"Орион" для проведения "Евро-2012". Красавцы, правда?
+                    Хотя, с желтым перестарались....
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+                    Проект мониторинга автомобильных дорог для "Службы автомобильных дорог Украины"
+                    под "Евро-2012" в достаточной мере продемонстрировал возможности НИЛ"Орион".
+                    Результатом данного проекта явилось создание автомобильных комплексов мониторинга
+                    состояния дорожного покрытия, дорожной обстановки и придорожной инфраструктуры.
+                    Установленное на борту автомобиля оборудование
+                    (4 HD видеокамеры, акселлерометры, пирометр, толчкомер) от ведущих производителей
+                    "Axis", "Neotex", "Dallas semiconduktor" и др.) позволило получать информацию о
+                    дорогах Украины в реальном времени и с высокой достоверность. Привязка к координатам
+                    осуществлялась благодаря использованию приемников спутниковой навигации и системы
+                    инерциального позиционирования.
+                </div>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+                <div class="column_6">
+                    <img src="images/car_02.jpg" alt="car_02" class="responsive" />
+                </div>
+            </div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+            <div class="row padding">
+                &zwnj;
+            </div>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+            <div class="row">
+                <div class="column_6">
+                    <img src="images/car_03.jpg" alt="car_02" class="responsive" />
+                </div>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+                <div class="column_6">
+                    Почему использовались "Ford" ? Да просто потому, что они наиболее соответствовали
+                    техническим требованиям устанавливаемого оборудования. Конечно, при соответствующей
+                    модификации возможна установка и на другие модели автомобилей. В настоящий момент
+                    проводится работа в этом направлении.
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+                    <br />
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+                    Основа любых измерений - "точка отсчета" или "привязка". Какая "привязка" наиболее
+                    критична для автомобилей, тестирующих дороги? Естественно, МЕСТО! Принципы
+                    геопозиционирования известны давно. Можно применить астролябию или секстант с соответствующими
+                    таблицами... К счастью, эра спутникового позиционирования уже наступила и точность
+                    определения места достаточно высока, НО, к сожалению, и эта система не безгрешна -
+                    городские "каньоны", туннели, горы, высокая растительность (да, да! и леса мешают!) в
+                    некоторых случаях сводят на нет ярко выраженные преимущества спутникового позиционирования.
+                    В данных автомобилях эти недостатки сведены к минимуму, благодаря внутренней системе
+                    инерциального позиционирования.
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/shybovycha">shybovycha</a> can be found on <a href="https://github.com/shybovycha/orionlab">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
+                    <br />
 
-    </div>
+                    Более подробно об этом и многом другом - в ближайшее время!
+                </div>
+            </div>
 
-    
-  </body>
+            <div class="row padding">
+                &zwnj;
+            </div>
+
+            <div class="row">
+                <div class="column_6">
+                    <img src="images/product_01.jpg" alt="product_01" class="responsive" />
+                </div>
+
+                <div class="column_6">
+                    Предлагаем для организаций и частных лиц, использующих электроные ключи (электронные идентификаторы):
+
+                    <br /><br />
+
+                    <ul class="square">
+                        <li>Считыватель для ключа iButton (USB)</li>
+                        <li>Протокол USB 1.1 и USB 2.0</li>
+                        <li>Длина кабеля от 10см до 1,5м (по желанию заказчика)</li>
+                        <li>Время отклика &lt; 0,001 сек (зависит от применяемого ключа iButton)</li>
+                        <li>Габаритные размеры адаптера: не более 8х15х50 мм (с разьемом)</li>
+                        <li>Гнездо для iButton двухконтактное, с возможностью фиксации</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="padding bck theme" id="contacts">
+            <div class="row text center">
+                <h2>Контакты</h2>
+            </div>
+
+            <hr />
+
+            <div class="row padding">
+                &zwnj;
+            </div>
+
+            <div class="row">
+                <div class="column_6">
+                    <div id="contact-map"></div>
+
+                    <div id="contact-map-marker-popup-html">
+                        <p class="contact-map-marker-popup-html">Мы здесь!</p>
+                    </div>
+                </div>
+
+                <div class="column_6 text normal">
+                    Киев, пр-т Московский 9-В
+
+                    <br /><br />
+
+                    Генеральный директор 0503522489<br />
+                    Бухгалтерия 0444559622<br />
+                    Главный Инженер 0938767814<br />
+                    Юридический отдел 0936632658<br />
+
+                    <br />
+
+                    <h4 class="text center">Хотите отправить нам сообщение?</h4>
+
+                    <br />
+
+                    <form action="#" method="post">
+                        <fieldset>
+                            <label for="name">Ваше имя<small>обязательно</small></label>
+                            <input type="text" name="name" required="required" />
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="message">Текст сообщения<small>мин. - 4 символа</small></label>
+                            <textarea name="name" required="required" min-length="4"></textarea>
+                        </fieldset>
+
+                        <br />
+
+                        <div class="text center">
+                            <a class="button large success" type="submit">
+                                <span class="icon comments"></span>
+                                Отправить
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="padding bck lightblue" id="gallery">
+            <div class="row text center">
+                <h2>Галерея</h2>
+            </div>
+
+            <hr />
+
+            <div class="row padding">
+                &zwnj;
+            </div>
+
+            <div class="row">
+                <div class="column_12 text center">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="gallery/image1_orig.jpg" title="gallery_image_01">
+                        <img src="gallery/image1_thumb.jpg" alt="" />
+                    </a>
+
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="gallery/image2_orig.jpg" title="gallery_image_02">
+                        <img src="gallery/image2_thumb.jpg" alt="" />
+                    </a>
+
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="gallery/image3_orig.jpg" title="gallery_image_03">
+                        <img src="gallery/image3_thumb.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="row padding">&zwnj;</div>
+        </section>
+
+        <section class="padding bck theme">
+            <div class="row text center">
+                &copy; Orion Laboratory; 2013
+            </div>
+        </section>
+    </body>
 </html>
