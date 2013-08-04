@@ -8,20 +8,25 @@
         <link rel="stylesheet" href="css/tuktuk.css">
         <link rel="stylesheet" href="css/tuktuk.icons.css">
         <link rel="stylesheet" href="css/tuktuk.theme.css">
-        <link rel="stylesheet" href="css/color_names.css">
         <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
         <link rel="stylesheet" href="css/custom.css">
 
-        <script src="js/zepto.js"></script>
+        <script src="js/jquery-2.0.3.min.js"></script>
         <script src="js/tuktuk.js"></script>
         <script src="js/leaflet.js"></script>
+        <script src="js/fancybox/jquery.fancybox.js"></script>
         <script src="js/custom.js"></script>
     </head>
 
     <body>
         <section class="padding bck theme" id="home">
             <div class="row text book">
-                <div class="column_4 offset_8">
+                <div class="column_8">
+                    <img src="images/logo.png" alt="logo goes here" />
+                </div>
+
+                <div class="column_4">
                     <h5>НИЛ <span class="tip-bottom cursor-pointer header-help" data-tip="Научно-Исследовательская Лаборатория"><span class="icon question-sign"></span></span></h5>
                     <h1>Орион</h1>
 
@@ -146,7 +151,7 @@
                         <li>Считыватель для ключа iButton (USB)</li>
                         <li>Протокол USB 1.1 и USB 2.0</li>
                         <li>Длина кабеля от 10см до 1,5м (по желанию заказчика)</li>
-                        <li>Время отклика < 0,001 сек (зависит от применяемого ключа iButton)</li>
+                        <li>Время отклика &lt; 0,001 сек (зависит от применяемого ключа iButton)</li>
                         <li>Габаритные размеры адаптера: не более 8х15х50 мм (с разьемом)</li>
                         <li>Гнездо для iButton двухконтактное, с возможностью фиксации</li>
                     </ul>
@@ -174,7 +179,7 @@
                     </div>
                 </div>
 
-                <div class="column_6">
+                <div class="column_6 text normal">
                     Киев, пр-т Московский 9-В
 
                     <br /><br />
@@ -183,7 +188,70 @@
                     Бухгалтерия 0444559622<br />
                     Главный Инженер 0938767814<br />
                     Юридический отдел 0936632658<br />
+
+                    <br />
+
+                    <h4 class="text center">Хотите отправить нам сообщение?</h4>
+
+                    <br />
+
+                    <form action="#" method="post">
+                        <fieldset>
+                            <label for="name">Ваше имя<small>обязательно</small></label>
+                            <input type="text" name="name" required="required" />
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="message">Текст сообщения<small>мин. - 4 символа</small></label>
+                            <textarea name="name" required="required" min-length="4"></textarea>
+                        </fieldset>
+
+                        <br />
+
+                        <div class="text center">
+                            <a class="button large success" type="submit">
+                                <span class="icon comments"></span>
+                                Отправить
+                            </a>
+                        </div>
+                    </form>
                 </div>
+            </div>
+        </section>
+
+        <section class="padding bck lightblue" id="gallery">
+            <div class="row text center">
+                <h2>Галерея</h2>
+            </div>
+
+            <hr />
+
+            <div class="row padding">
+                &zwnj;
+            </div>
+
+            <div class="row">
+                <div class="column_12 text center">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="gallery/image1_orig.jpg" title="gallery_image_01">
+                        <img src="gallery/image1_thumb.jpg" alt="" />
+                    </a>
+
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="gallery/image2_orig.jpg" title="gallery_image_02">
+                        <img src="gallery/image2_thumb.jpg" alt="" />
+                    </a>
+
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="gallery/image3_orig.jpg" title="gallery_image_03">
+                        <img src="gallery/image3_thumb.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="row padding">&zwnj;</div>
+        </section>
+
+        <section class="padding bck theme">
+            <div class="row text center">
+                &copy; Orion Laboratory; 2013
             </div>
         </section>
     </body>
