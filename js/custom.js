@@ -9,23 +9,6 @@ function setup_map() {
     L.marker([50.489511, 30.472686]).addTo(map).bindPopup($('#contact-map-marker-popup-html').html()).openPopup();
 }
 
-function setup_gallery() {
-	$(".fancybox-thumb").fancybox({
-		prevEffect	: 'swing',
-		nextEffect	: 'swing',
-		helpers	: {
-			title	: {
-				type: 'outside'
-			},
-			thumbs	: {
-				width	: 50,
-				height	: 50
-			}
-		}
-	});
-}
-
 $(document).ready(function() {
     setup_map();
-    setup_gallery();
 });
