@@ -1,4 +1,6 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 300; src: local('Open Sans Light'), local('OpenSans-Light'), url(fonts/OpenSans-Light.ttf) format('ttf'); }
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: local('Open Sans'), local('OpenSans'), url(fonts/OpenSans-Regular.ttf) format('ttf'); }
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 700; src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/OpenSans-Bold.ttf) format('ttf'); }
 body{color:#34495e;background:#fff;font-size:15px;font-family:"Open Sans","Helvetica Neue",Helvetica,sans-serif;font-weight:300;letter-spacing:-.05em;}
 body:not(.color):not(.dark) a{color:#34495e;}
 body:not(.color):not(.dark) a:not(.button):hover,body:not(.color):not(.dark) a:not(.button):active{color:#1abc9c}
