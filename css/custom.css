@@ -32,3 +32,25 @@ p.contact-map-marker-popup-html {
 .header-help {
     font-size: 0.85em;
 }
+
+.sticky.menu.fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;
+}
+
+.leaflet-top, .leaflet-left, .leaflet-bottom, .leaflet-right {
+    z-index: 0 !important;
+}
+
+.contact.form .submit.button {
+    background-color: #6B60EC !important;
+}
+
+.top.logo {
+    margin-top: 7px;
+    box-shadow: 0px 0px 5px 5px #17C4FB;
+    border-radius: 5px;
+}

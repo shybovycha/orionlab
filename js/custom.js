@@ -9,6 +9,11 @@ function setup_map() {
     L.marker([50.489511, 30.472686]).addTo(map).bindPopup($('#contact-map-marker-popup-html').html()).openPopup();
 }
 
+function setup_sticky_menu() {
+    $('.sticky.menu').sticky();
+}
+
 $(document).ready(function() {
     setup_map();
+    setup_sticky_menu();
 });
